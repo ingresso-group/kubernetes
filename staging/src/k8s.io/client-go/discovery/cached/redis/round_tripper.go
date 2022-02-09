@@ -3,20 +3,19 @@ package redis
 import (
 	"context"
 	"net/http"
+	"time"
 
 	redis "github.com/go-redis/redis/v8"
 	"github.com/gregjones/httpcache"
 	"k8s.io/klog/v2"
 )
 
-//TODO: copy https://github.com/gregjones/httpcache/blob/master/redis/redis.go
-
 type cache struct {
 	rdb *redis.Client
 }
 
 func cacheKey(key string) string {
-	return "rediscache:" + key
+	return "kubecache:" + key
 }
 
 func (c cache) Get(key string) (resp []byte, ok bool) {
@@ -29,7 +28,7 @@ func (c cache) Get(key string) (resp []byte, ok bool) {
 
 // Set saves a response to the cache as key.
 func (c cache) Set(key string, resp []byte) {
-	_ = c.rdb.Set(context.TODO(), cacheKey(key), resp, 0).Err()
+	_ = c.rdb.Set(context.TODO(), cacheKey(key), resp, 7*24*time.Hour).Err()
 }
 
 // Delete removes the response with key from the cache.
