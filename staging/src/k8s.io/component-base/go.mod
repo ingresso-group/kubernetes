@@ -7,7 +7,7 @@ go 1.16
 require (
 	github.com/blang/semver v3.5.1+incompatible
 	github.com/go-logr/logr v0.4.0
-	github.com/google/go-cmp v0.5.5
+	github.com/google/go-cmp v0.5.6
 	github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369 // indirect
 	github.com/moby/term v0.0.0-20201216013528-df9cb8a40635
 	github.com/prometheus/client_golang v1.7.1
@@ -28,6 +28,10 @@ require (
 )
 
 replace (
+	github.com/cespare/xxhash/v2 => github.com/cespare/xxhash/v2 v2.1.1
+	github.com/google/go-cmp => github.com/google/go-cmp v0.5.5
+	github.com/onsi/ginkgo => github.com/onsi/ginkgo v1.11.0
+	github.com/onsi/gomega => github.com/onsi/gomega v1.7.0
 	k8s.io/api => ../api
 	k8s.io/apimachinery => ../apimachinery
 	k8s.io/client-go => ../client-go

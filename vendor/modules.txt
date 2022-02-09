@@ -198,7 +198,7 @@ github.com/blang/semver
 github.com/caddyserver/caddy/caddyfile
 # github.com/cenkalti/backoff => github.com/cenkalti/backoff v2.1.1+incompatible
 # github.com/census-instrumentation/opencensus-proto => github.com/census-instrumentation/opencensus-proto v0.2.1
-# github.com/cespare/xxhash/v2 v2.1.1 => github.com/cespare/xxhash/v2 v2.1.1
+# github.com/cespare/xxhash/v2 v2.1.2 => github.com/cespare/xxhash/v2 v2.1.1
 github.com/cespare/xxhash/v2
 # github.com/cespare/xxhash/v2 => github.com/cespare/xxhash/v2 v2.1.1
 # github.com/chai2010/gettext-go v0.0.0-20160711120539-c6fed771bfd5 => github.com/chai2010/gettext-go v0.0.0-20160711120539-c6fed771bfd5
@@ -315,6 +315,9 @@ github.com/daviddengcn/go-colortext
 # github.com/dgrijalva/jwt-go v3.2.0+incompatible => github.com/dgrijalva/jwt-go v3.2.0+incompatible
 github.com/dgrijalva/jwt-go
 # github.com/dgrijalva/jwt-go => github.com/dgrijalva/jwt-go v3.2.0+incompatible
+# github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f => github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f
+github.com/dgryski/go-rendezvous
+# github.com/dgryski/go-rendezvous => github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f
 # github.com/dnaeon/go-vcr => github.com/dnaeon/go-vcr v1.0.1
 # github.com/docker/distribution v2.7.1+incompatible => github.com/docker/distribution v2.7.1+incompatible
 ## explicit
@@ -437,6 +440,16 @@ github.com/go-openapi/swag
 github.com/go-ozzo/ozzo-validation
 # github.com/go-ozzo/ozzo-validation => github.com/go-ozzo/ozzo-validation v3.5.0+incompatible
 github.com/go-ozzo/ozzo-validation/is
+# github.com/go-redis/redis/v8 v8.11.4 => github.com/go-redis/redis/v8 v8.11.4
+github.com/go-redis/redis/v8
+# github.com/go-redis/redis/v8 => github.com/go-redis/redis/v8 v8.11.4
+github.com/go-redis/redis/v8/internal
+github.com/go-redis/redis/v8/internal/hashtag
+github.com/go-redis/redis/v8/internal/hscan
+github.com/go-redis/redis/v8/internal/pool
+github.com/go-redis/redis/v8/internal/proto
+github.com/go-redis/redis/v8/internal/rand
+github.com/go-redis/redis/v8/internal/util
 # github.com/go-stack/stack => github.com/go-stack/stack v1.8.0
 # github.com/gobuffalo/here => github.com/gobuffalo/here v0.6.0
 # github.com/godbus/dbus/v5 v5.0.4 => github.com/godbus/dbus/v5 v5.0.4
@@ -548,7 +561,7 @@ github.com/google/cadvisor/utils/sysinfo
 github.com/google/cadvisor/version
 github.com/google/cadvisor/watcher
 github.com/google/cadvisor/zfs
-# github.com/google/go-cmp v0.5.5 => github.com/google/go-cmp v0.5.5
+# github.com/google/go-cmp v0.5.6 => github.com/google/go-cmp v0.5.5
 ## explicit
 # github.com/google/go-cmp => github.com/google/go-cmp v0.5.5
 github.com/google/go-cmp/cmp
@@ -833,7 +846,7 @@ github.com/mxk/go-flowrate/flowrate
 # github.com/naoina/toml => github.com/naoina/toml v0.1.1
 # github.com/niemeyer/pretty => github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e
 # github.com/olekukonko/tablewriter => github.com/olekukonko/tablewriter v0.0.4
-# github.com/onsi/ginkgo v1.11.0 => github.com/onsi/ginkgo v1.11.0
+# github.com/onsi/ginkgo v1.16.4 => github.com/onsi/ginkgo v1.11.0
 ## explicit
 github.com/onsi/ginkgo
 # github.com/onsi/ginkgo => github.com/onsi/ginkgo v1.11.0
@@ -861,7 +874,7 @@ github.com/onsi/ginkgo/reporters/stenographer
 github.com/onsi/ginkgo/reporters/stenographer/support/go-colorable
 github.com/onsi/ginkgo/reporters/stenographer/support/go-isatty
 github.com/onsi/ginkgo/types
-# github.com/onsi/gomega v1.7.0 => github.com/onsi/gomega v1.7.0
+# github.com/onsi/gomega v1.16.0 => github.com/onsi/gomega v1.7.0
 ## explicit
 github.com/onsi/gomega
 # github.com/onsi/gomega => github.com/onsi/gomega v1.7.0
@@ -1954,6 +1967,7 @@ k8s.io/client-go/discovery
 k8s.io/client-go/discovery/cached
 k8s.io/client-go/discovery/cached/disk
 k8s.io/client-go/discovery/cached/memory
+k8s.io/client-go/discovery/cached/redis
 k8s.io/client-go/discovery/fake
 k8s.io/client-go/dynamic
 k8s.io/client-go/dynamic/fake
